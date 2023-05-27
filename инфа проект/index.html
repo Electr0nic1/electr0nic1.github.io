@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шифрование</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="top.js"></script>
+</head>
+<body>
+  <header>
+    <div>
+        <h1 class="title">Шифрование</h1>
+    </div>
+    <div class="textcols">
+        <div class="textcols-item">
+            <h2 class="cipher"><a href="#1">Шифр Цезаря</a></h2>
+            <p class="text">— это один из простейших и наиболее известных методов шифрования. Он был назван в честь римского императора Гая Юлия Цезаря, который, считается, использовал этот метод для обеспечения конфиденциальности своей переписки.</p>
+        </div>
+        <div class="textcols-item">
+            <a class="cipher">Шифр долбаеба</a>
+            <a></a>
+      </div>
+      <div class="textcols-item">
+           <a class="cipher">шифр хуесоса</a>
+           <a></a>
+       </div>
+    </div>
+  </header>
+  <main>
+    <div>
+        <h2 class="caesar"><a name="1">Шифр Цезаря</a></h2>
+        <div class="textbox">
+            <p class="text">Шифр Цезаря является подстановочным шифром, основанным на сдвиге символов в алфавите. Идея заключается в том, что каждая буква заменяется на другую букву, находящуюся на фиксированном числе позиций вперед или назад в алфавите.
+            Давайте рассмотрим пример. Представим, что мы используем английский алфавит и хотим зашифровать сообщение "HELLO" с помощью шифра Цезаря со сдвигом 3. Сначала мы приводим все буквы к верхнему регистру, чтобы упростить шифрование. Тогда буква "H" будет заменена на "K", буква "E" на "H", буква "L" на "O", и буква "O" на "R". Зашифрованное сообщение будет выглядеть как "KHOOR".</p>
+        </div>
+        <h3 class="caesar">Пример использования шифра Цезаря</h3>
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-md-6">
+                  <div id="encrypt-block">
+                    <h3>Введите текст: </h3>
+                    <textarea name="user-text" id="text-to-work" cols="40" rows="3"></textarea>
+                    <br><br>
+                    <div class="form-group">
+                      <button class="btn btn-primary" id="encrypt-btn">Зашифровать</button>
+                      <button class="btn btn-primary" id="decrypt-btn">Дешифровать</button>
+                      <button class="btn btn-danger" id="btn-reset">Очистить</button>
+                    </div>
+                    <h4>Шаг сдвига:</h4>
+                    <select name="user_step" id="encrypt-step" size="1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option selected>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Результат:</h3>
+                    <textarea readonly id="output" cols="40" rows="3"></textarea>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </main>
+</body>
+</html>
